@@ -2,7 +2,7 @@ from flask import Flask
 import os
 import sys
 script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "script.pyw"))
-sys.path.append(os.path.dirname(script_path))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import script
 import threading
 
