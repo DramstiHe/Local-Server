@@ -9,7 +9,7 @@ import threading
 app = Flask(__name__)
 
 def run_script_in_thread():
-    script_thread = threading.Thread(target=script.run)
+    script_thread = threading.Thread(target=main)
     script_thread.start()
 
 @app.route('/')
