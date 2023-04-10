@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flask App</title>
+  </head>
+  <body>
+    <h1>Flask App</h1>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $.get("github-url", function(data) {
+          console.log(data);
+        });
+      });
+    </script>
+  </body>
+</html>
